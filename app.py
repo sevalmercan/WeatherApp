@@ -3,14 +3,17 @@ from flask import Flask, jsonify,request
 from flask_cors import CORS
 import requests
 import json
-
-# configuration
+from dotenv import load_dotenv# configuration
+import os
+load_dotenv()
 DEBUG = True
 
 # instantiate the app
 app = Flask(__name__)
 app.config.from_object(__name__)
 
+
+ 
 # enable CORS
 CORS(app, resources={r'/*': {'origins': '*'}})
 
@@ -21,7 +24,8 @@ proxies = {
 
 @app.route('/', methods=['GET','POST'])
 def get_weather_data():
-    api_key= "20571ab45c74dc2a1897b60c5b8047a1"
+   
+    api_key= os.getenv("APIKEY")
     base_url_weekly="https://api.openweathermap.org/data/2.5/forecast/daily"
     base_url="https://api.openweathermap.org/data/2.5/weather"
     isCityExist=True
