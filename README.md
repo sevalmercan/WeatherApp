@@ -1,8 +1,5 @@
 # myapp
-Inline-style: 
-![alt text](https://im.ge/i/OgzEm8)
 
-![Alt Text](https://im.ge/i/OgzEm8)
 ## Project setup
 ```
 npm install
