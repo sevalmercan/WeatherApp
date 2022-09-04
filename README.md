@@ -2,10 +2,7 @@
 Inline-style: 
 ![alt text](https://im.ge/i/OgzEm8)
 
-Reference-style: 
-![alt text][logo]
-
-[logo]: https://im.ge/i/OgzC1X
+![Alt Text](https://im.ge/i/OgzEm8)
 ## Project setup
 ```
 npm install
