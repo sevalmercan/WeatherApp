@@ -37,8 +37,8 @@ def get_weather_data():
         callUrl ="?lat={lat}&lon={long}".format(lat=request.json.get('lat'),long=request.json.get('long'))
 
     args=request.args
-    req = requests.get("{base_url}{callUrl}&appid={api_key}&units={temp_type}".format(base_url=base_url,api_key=api_key,callUrl=callUrl,temp_type=temp_type),proxies=proxies)
-    req2 = requests.get("{base_url_weekly}{callUrl}&cnt=7&appid={api_key}&units={temp_type}".format(api_key=api_key,callUrl=callUrl,base_url_weekly=base_url_weekly,temp_type=temp_type),proxies=proxies)
+    req = requests.get("{base_url}{callUrl}&appid={api_key}&units={temp_type}".format(base_url=base_url,api_key=api_key,callUrl=callUrl,temp_type=temp_type))
+    req2 = requests.get("{base_url_weekly}{callUrl}&cnt=7&appid={api_key}&units={temp_type}".format(api_key=api_key,callUrl=callUrl,base_url_weekly=base_url_weekly,temp_type=temp_type))
 
     return jsonify({
         'status': 'success',
