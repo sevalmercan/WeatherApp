@@ -1,5 +1,5 @@
 # myapp
-
+![](https://media.giphy.com/media/KYVOSFCV9yo4mKnGXi/giphy.gif)
 ## Project setup
 ```
 npm install
