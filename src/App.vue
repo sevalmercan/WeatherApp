@@ -6,10 +6,7 @@
       :weeklyWeatherData="weeklyWeather"
       v-if="isWeatherDataExist"
     ></weather-chart>
-    <div>
-      {{ tempTypedeneme }}
-    </div>
-  </div>
+</div>
 </template>
 
 <script>
